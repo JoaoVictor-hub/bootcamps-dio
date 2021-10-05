@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhibliFlix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./resources/favicon.ico" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <header id="top">
+        <div class="container">
+            <div class="logo">
+                <h1 class="title">GhibliFlix</h1>
+                <hr>
+                <small class="subtitle">ジブリフリックス</small>
+            </div>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#films">Filmes</a>
+                <a href="#characters">Personagens</a>
+                <a href="#locations">Localizações</a>
+            </nav>
+            <div class="user-menu">
+                <span>Usuário</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="highlighted-card">
+            <div class="container">
+                <h3 class="title"> O que é?</h3>
+                <p class="description">
+                    Aqui você pode visualizar as informações de todas as animações do Studio Ghibli. Você pode adicionar filmes na <a href="#">sua lista de desejo</a> ou na <a href="#">sua lista de já vistos</a>. Além disso, salvar os seus personagens
+                    favoritos e visualizar posteriormente na
+                    <a href="#">lista de favoritos</a>.
+                </p>
+                <div class="buttons">
+                    <button class="button" type="button" role="button">
+                        <i class="fas fa-eye"></i>
+                        Já visualizados
+                    </button>
+                    <button class="button" type="button" role="button">
+                        <i class="fas fa-tags"></i>
+                        Lista de desejos
+                    </button>
+                </div>
+            </div>
+            <div class="container highlighted-characters">
+                <div class="row">
+                    <div class="column">
+                        <div class="highlighted-character">
+                            <div class="icon-group">
+                                <i class="fas fa-trophy"></i>
+                                <i class="fas fa-trophy"></i>
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>PERSONAGENS</h3>
+                            <span>Melhor avaliados</span>
+                            <i class="see-more fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <i class="fas fa-angle-up"></i>
+                        <div class="character-card">
+                            <div class="overlay"></div>
+                            <img loading="lazy" src="./resources/images/characters/Kiki.jpeg" alt="Personagem Kiki">
+                            <span>Kiki</span>
+                        </div>
+                        <div class="character-card character-card-selected">
+                            <div class="overlay"></div>
+                            <img loading="lazy" src="./resources/images/characters/Nausicaä.jpg" alt="Personagem Nausicaä">
+                            <span>Nausicaä</span>
+                        </div>
+                        <div class="character-card">
+                            <div class="overlay"></div>
+                            <img loading="lazy" src="./resources/images/characters/Sheeta.jpg" alt="Personagem Sheeta">
+                            <span>Sheeta</span>
+                        </div>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="films">
+            <div class="title">
+                <i class="fas fa-film"></i> Filmes em Destaque
+            </div>
+            <div id="main-carousel" class="carousel">
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>天空の城ラピュタ</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Castle-in-the-Sky.jpg" alt="Filme Castle in the Sky">
+                    <div class="description">
+                        <span>Castle in the Sky</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>火垂るの墓</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Grave-of-the-Fireflies.jpg" alt="Filme Grave of the Fireflies">
+                    <div class="description">
+                        <span>Grave of the Fireflies</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>となりのトトロ</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/My-Neighbor-Totoro.jpg" alt="Filme My Neighbor Totoro">
+                    <div class="description">
+                        <span>My Neighbor Totoro</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>魔女の宅急便</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Kiki's-Delivery-Service.jpg" alt="Filme Kiki's Delivery Service">
+                    <div class="description">
+                        <span>Kiki's Delivery Service</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>おもひでぽろぽろ</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Only-Yesterday.png" alt="Filme Only Yesterday">
+                    <div class="description">
+                        <span>Only Yesterday</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>紅の豚</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Porco-Rosso.jpg" alt="Filme Porco Rosso">
+                    <div class="description">
+                        <span>Porco Rosso</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>平成狸合戦ぽんぽこ</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Pom-Poko.jpg" alt="Filme Pom Poko">
+                    <div class="description">
+                        <span>Pom Poko</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>耳をすませば</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Whisper-of-the-Heart.jpg" alt="Filme Whisper of the Heart">
+                    <div class="description">
+                        <span>Whisper of the Heart</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>もののけ姫</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Princess-Mononoke.png" alt="Filme Princess Mononoke">
+                    <div class="description">
+                        <span>Princess Mononoke</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>ホーホケキョ となりの山田くん</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/My-Neighbors-the-Yamadas.jpg" alt="Filme My Neighbors the Yamadas">
+                    <div class="description">
+                        <span>My Neighbors the Yamadas</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>千と千尋の神隠し</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Spirited-Away.jpg" alt="Filme Spirited Away">
+                    <div class="description">
+                        <span>Spirited Away</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>猫の恩返し</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/The-Cat-Returns.jpg" alt="Filme The Cat Returns">
+                    <div class="description">
+                        <span>The Cat Returns</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>ハウルの動く城</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Howl's-Moving-Castle.jpg" alt="Filme Howl's Moving Castle">
+                    <div class="description">
+                        <span>Howl's Moving Castle</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>ゲド戦記</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Tales-from-Earthsea.png" alt="Filme Tales from Earthsea">
+                    <div class="description">
+                        <span>Tales from Earthsea</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>崖の上のポニョ</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Ponyo.png" alt="Filme Ponyo">
+                    <div class="description">
+                        <span>Ponyo</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>借りぐらしのアリエッティ</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/Arrietty.jpg" alt="Filme Arrietty">
+                    <div class="description">
+                        <span>Arrietty</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>コクリコ坂から</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/From-Up-on-Poppy-Hill.jpg" alt="Filme From Up on Poppy Hill">
+                    <div class="description">
+                        <span>From Up on Poppy Hill</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>風立ちぬ</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/The-Wind-Rises.jpg" alt="Filme The Wind Rises">
+                    <div class="description">
+                        <span>The Wind Rises</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>かぐや姫の物語</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/The-Tale-of-the-Princess-Kaguya.jpg" alt="Filme The Tale of the Princess Kaguya">
+                    <div class="description">
+                        <span>The Tale of the Princess Kaguya</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>思い出のマーニー</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/When-Marnie-Was-There.jpg" alt="Filme When Marnie Was There">
+                    <div class="description">
+                        <span>When Marnie Was There</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <div class="description">
+                        <span>レッドタートル ある島の物語</span>
+                    </div>
+                    <img loading="lazy" src="./resources/images/films/The-Red-Turtle.png" alt="Filme The Red Turtle">
+                    <div class="description">
+                        <span>The Red Turtle</span>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="carousel-button main-carousel-button">                  
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                <button class="carousel-button main-carousel-button">                   
+                        <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="row">
+                <hr class="separator">
+
+                <hr class="separator">
+            </div>
+        </section>
+        <section id="characters">
+            <h2>
+                <i class="fas fa-user-ninja"></i> Personagens
+            </h2>
+            <div id="characters-carousel" class="carousel">
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/Ashitaka.jpg" alt="Personagem Ashitaka">
+                    <div class="description">
+                        <span>Ashitaka</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/Chihiro-Ogino.jpg" alt="Personagem Chihiro Ogino">
+                    <div class="description">
+                        <span>Chihiro Ogino</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/Haku.jpg" alt="Personagem Haku">
+                    <div class="description">
+                        <span>Haku</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/Howl.jpg" alt="Howl">
+                    <div class="description">
+                        <span>Howl</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/Kiki.jpeg" alt="Personagem Kiki">
+                    <div class="description">
+                        <span>Kiki</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/Nausicaä.jpg" alt="Personagem Nausicaä">
+                    <div class="description">
+                        <span>Nausicaä</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/San.jpg" alt="Personagem San">
+                    <div class="description">
+                        <span>San</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/Sheeta.jpg" alt="Personagem Sheeta">
+                    <div class="description">
+                        <span>Sheeta</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/Shizuku-Tsukishima.png" alt="Personagem Shizuku Tsukishima">
+                    <div class="description">
+                        <span>Shizuku Tsukishima</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/Sophie-Hatter.jpg" alt="Sophie Hatter">
+                    <div class="description">
+                        <span>Sophie Hatter</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/Sosuke.jpg" alt="Sosuke">
+                    <div class="description">
+                        <span>Sosuke</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <img loading="lazy" src="./resources/images/characters/Totoro.jpg" alt="Totoro">
+                    <div class="description">
+                        <span>Totoro</span>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="carousel-button characters-carousel-button">                  
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="carousel-button characters-carousel-button">                   
+                        <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="row">
+                <hr class="separator">
+                <hr class="separator">
+            </div>
+        </section>
+        <section id="locations">
+            <h2>
+                <i class="fas fa-map-marked-alt"></i> Localizações
+            </h2>
+            <div id="locations-carousel" class="carousel">
+                <div class="carousel-element carousel-element-large">
+                    <img loading="lazy" src="./resources/images/locations/Bamboo-Forest.png" alt="Localização Bamboo Forest">
+                    <div class="description">
+                        <span>Bamboo Forest</span>
+                    </div>
+                </div>
+                <div class="carousel-element carousel-element-large">
+                    <img loading="lazy" src="./resources/images/locations/Gutiokipanja.jpg" alt="Localização Gutiokipanja">
+                    <div class="description">
+                        <span>Gutiokipanja</span>
+                    </div>
+                </div>
+                <div class="carousel-element carousel-element-large">
+                    <img loading="lazy" src="./resources/images/locations/Irontown.jpg" alt="Localização Irontown">
+                    <div class="description">
+                        <span>Irontown</span>
+                    </div>
+                </div>
+                <div class="carousel-element carousel-element-large">
+                    <img loading="lazy" src="./resources/images/locations/The-Cat-Kingdom.jpg" alt="Localização The Cat Kingdom">
+                    <div class="description">
+                        <span>The Cat Kingdom</span>
+                    </div>
+                </div>
+                <div class="carousel-element carousel-element-large">
+                    <img loading="lazy" src="./resources/images/locations/The-Marsh-House.jpg" alt="Localização The Marsh House">
+                    <div class="description">
+                        <span>The Marsh House</span>
+                    </div>
+                </div>
+                <div class="carousel-element carousel-element-large">
+                    <img loading="lazy" src="./resources/images/locations/Ursula's-Log-Cabin.jpg" alt="Localização Ursula's Log Cabin">
+                    <div class="description">
+                        <span>Ursula's Log Cabin</span>
+                    </div>
+                </div>
+                <div class="carousel-element carousel-element-large">
+                    <img loading="lazy" src="./resources/images/locations/Zeniba's-Cottage.jpg" alt="Localização Zeniba's Cottage">
+                    <div class="description">
+                        <span>Zeniba's Cottage</span>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="carousel-button locations-carousel-button">                  
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                <button class="carousel-button locations-carousel-button">                   
+                        <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+
+                <div class="row">
+                    <div class="column">
+                        <div class="logo">
+                            <h1 class="title">GhibliFlix</h1>
+                            <hr>
+                            <small class="subtitle">ジブリフリックス</small>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <nav>
+                            <a href="#films">Filmes</a>
+                            <a href="#characters">Personagens</a>
+                            <a href="#locations">Localizações</a>
+                        </nav>
+                    </div>
+                    <div class="column">
+                        <a title="Subir" href="#top" class="to-top"><i class="fas fa-arrow-alt-circle-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="resources/js/carousel.js"></script>
+</body>
+
+</html>

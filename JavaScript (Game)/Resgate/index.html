@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgate</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div id="sky" class="background">
+            <div id="forest" class="background">
+                <div id="ground" class="background">
+                    <div id="game">
+                        <div id="start" class="content-layer">
+                            <h1>Resgate</h1>
+                            <p>Movimento: W A S D ou setas (🠕🠔🠗🠖)</p>
+                            <p>Ataque: X ou B</p>
+                            <p>Abduzir: Barra de espaço</p>
+                            <h2>Clique aqui para iniciar</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <audio src="resources/sounds/shoot.mp3" preload="auto" id="shootSound"></audio>
+    <audio src="resources/sounds/explosion.mp3" preload="auto" id="explosionSound"></audio>
+    <audio src="resources/sounds/background.mp3" preload="auto" id="backgroundSound"></audio>
+    <audio src="resources/sounds/gameOver.mp3" preload="auto" id="gameOverSound"></audio>
+    <audio src="resources/sounds/lost.mp3" preload="auto" id="lostSound"></audio>
+    <audio src="resources/sounds/rescue.mp3" preload="auto" id="rescueSound"></audio>
+    <audio src="resources/sounds/warp.mp3" preload="auto" id="warpSound"></audio>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./resources/js/jquery-collision.min.js"></script>
+    <script src="./resources/js/core.js"></script>
+</body>
+
+</html>

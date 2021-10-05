@@ -1,0 +1,506 @@
+@font-face {
+    font-family: Titulo;
+    src: url(../fonts/DigitalDisco.ttf);
+}
+
+@font-face {
+    font-family: SubTitulo;
+    src: url(../fonts/DigitalDisco-Thin.ttf);
+}
+
+h1 {
+    font-family: Titulo;
+    font-size: 40px;
+    color: #603A03;
+}
+
+h2 {
+    font-family: Titulo;
+    font-size: 25px;
+    color: rgb(196, 165, 124);
+}
+
+span {
+    font-family: SubTitulo;
+    font-size: 25px;
+    color: #FFF;
+}
+
+p {
+    font-family: SubTitulo;
+    font-size: 20px;
+    color: #603A03;
+}
+
+body {
+    background-color: #82b6ff;
+}
+
+.container {
+    width: 992px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background {
+    width: 992px;
+    height: 630px;
+    background-size: cover;
+}
+
+#game {
+    display: flex;
+}
+
+main {
+    background-color: #82b6ff;
+    border-color: #82b6ff;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 5px 5px 100px #344966, -5px -5px 100px #d0ffff;
+}
+
+
+/**
+    Background
+**/
+
+#sky {
+    border-radius: 10px;
+    background-image: url(../images/background/sky.png);
+}
+
+#forest {
+    border-radius: 10px;
+    background-repeat: repeat;
+    background-size: contain;
+    background-image: url(../images/background/forest.png);
+}
+
+#ground {
+    border-radius: 10px;
+    background-repeat: repeat-x;
+    background-size: 50%;
+    background-position-y: bottom;
+    background-image: url(../images/background/ground.png);
+}
+
+#score {
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 580px;
+    background-image: linear-gradient(to top, #000, transparent);
+}
+
+#heart {
+    width: 140px;
+    height: 38px;
+    position: absolute;
+    left: 825px;
+    top: 20px;
+}
+
+#ufo {
+    width: 93px;
+    height: 81px;
+    position: absolute;
+    left: 8px;
+    top: 179px;
+    background-image: url(../images/ufo.png);
+}
+
+#laser {
+    width: 68px;
+    height: 100px;
+    position: absolute;
+    left: 8px;
+    top: 179px;
+    background-image: url(../images/laser.png);
+}
+
+#helicopter {
+    width: 234px;
+    height: 96px;
+    position: absolute;
+    left: 758px;
+    top: 120px;
+    background-image: url(../images/helicopter.png);
+}
+
+#truck {
+    width: 246px;
+    height: 105px;
+    position: absolute;
+    left: 750px;
+    top: 494px;
+    background-image: url(../images/truck.png);
+}
+
+#alien {
+    width: 35.5px;
+    height: 48px;
+    position: absolute;
+    left: 30px;
+    top: 545px;
+    background-image: url(../images/alien.png);
+}
+
+#start {
+    height: 300px;
+}
+
+.content-layer {
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 177px;
+    text-align: center;
+    padding: 10px;
+}
+
+#shot {
+    width: 50px;
+    height: 8px;
+    position: absolute;
+    background-image: url(../images/shoot.png);
+}
+
+#explosion {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    background-image: url(../images/explosion.png);
+}
+
+#hurt-alien {
+    width: 35px;
+    height: 46px;
+    position: absolute;
+}
+
+#warp-alien {
+    width: 34px;
+    height: 47px;
+    position: absolute;
+    left: 30px;
+    top: 545px;
+    background-image: url(../images/alien-warp.png);
+}
+
+
+/**
+    UFO ANIMATION
+**/
+
+.ufo-animation {
+    background-image: url(../images/ufo.png);
+    animation: ufoAnimation 6s steps(40) infinite;
+    -webkit-animation: ufoAnimation 6s steps(40) infinite;
+    -moz-animation: ufoAnimation 6s steps(40) infinite;
+    -ms-animation: ufoAnimation 6s steps(40) infinite;
+    -o-animation: ufoAnimation 6s steps(40) infinite;
+}
+
+@keyframes ufoAnimation {
+    100% {
+        background-position: -3720px;
+    }
+}
+
+@-webkit-keyframes ufoAnimation {
+    100% {
+        background-position: -3720px;
+    }
+}
+
+@-moz-keyframes ufoAnimation {
+    100% {
+        background-position: -3720px;
+    }
+}
+
+@-ms-keyframes ufoAnimation {
+    100% {
+        background-position: -3720px;
+    }
+}
+
+@-o-keyframes ufoAnimation {
+    100% {
+        background-position: -3720px;
+    }
+}
+
+
+/**
+    ALIEN ANIMATION
+**/
+
+.alien-animation {
+    background-image: url(../images/alien.png);
+    animation: alienAnimation .9s steps(2) infinite;
+    -webkit-animation: alienAnimation .9s steps(2) infinite;
+    -moz-animation: alienAnimation .9s steps(2) infinite;
+    -ms-animation: alienAnimation .9s steps(2) infinite;
+    -o-animation: alienAnimation .9s steps(2) infinite;
+}
+
+@keyframes alienAnimation {
+    100% {
+        background-position: -71px;
+    }
+}
+
+@-webkit-keyframes alienAnimation {
+    100% {
+        background-position: -71px;
+    }
+}
+
+@-moz-keyframes alienAnimation {
+    100% {
+        background-position: -71px;
+    }
+}
+
+@-ms-keyframes alienAnimation {
+    100% {
+        background-position: -71px;
+    }
+}
+
+@-o-keyframes alienAnimation {
+    100% {
+        background-position: -71px;
+    }
+}
+
+
+/**
+    HELICOPTER ANIMATION
+**/
+
+.helicopter-animation {
+    background-image: url(../images/helicopter.png);
+    animation: helicopterAnimation .3s steps(8) infinite;
+    -webkit-animation: helicopterAnimation .3s steps(8) infinite;
+    -moz-animation: helicopterAnimation .3s steps(8) infinite;
+    -ms-animation: helicopterAnimation .3s steps(8) infinite;
+    -o-animation: helicopterAnimation .3s steps(8) infinite;
+}
+
+@keyframes helicopterAnimation {
+    100% {
+        background-position: -1872px;
+    }
+}
+
+@-webkit-keyframes helicopterAnimation {
+    100% {
+        background-position: -1872px;
+    }
+}
+
+@-moz-keyframes helicopterAnimation {
+    100% {
+        background-position: -1872px;
+    }
+}
+
+@-ms-keyframes helicopterAnimation {
+    100% {
+        background-position: -1872px;
+    }
+}
+
+@-o-keyframes helicopterAnimation {
+    100% {
+        background-position: -1872px;
+    }
+}
+
+
+/**
+    EXPLOSION ANIMATION
+**/
+
+.explosion-animation {
+    background-image: url(../images/explosion.png);
+    animation: explosionAnimation .3s steps(6) 1;
+    -webkit-animation: explosionAnimation .3s steps(6) 1;
+    -moz-animation: explosionAnimation .3s steps(6) 1;
+    -ms-animation: explosionAnimation .3s steps(6) 1;
+    -o-animation: explosionAnimation .3s steps(6) 1;
+}
+
+@keyframes explosionAnimation {
+    100% {
+        background-position: -576px;
+    }
+}
+
+@-webkit-keyframes explosionAnimation {
+    100% {
+        background-position: -576px;
+    }
+}
+
+@-moz-keyframes explosionAnimation {
+    100% {
+        background-position: -576px;
+    }
+}
+
+@-ms-keyframes explosionAnimation {
+    100% {
+        background-position: -576px;
+    }
+}
+
+@-o-keyframes explosionAnimation {
+    100% {
+        background-position: -576px;
+    }
+}
+
+
+/**
+    LASER ANIMATION
+**/
+
+.laser-animation {
+    background-image: url(../images/laser.png);
+    animation: laserAnimation .3s steps(10) infinite;
+    -webkit-animation: laserAnimation .3s steps(10) infinite;
+    -moz-animation: laserAnimation .3s steps(10) infinite;
+    -ms-animation: laserAnimation .3s steps(10) infinite;
+    -o-animation: laserAnimation .3s steps(10) infinite;
+}
+
+@keyframes laserAnimation {
+    100% {
+        background-position: -680px;
+    }
+}
+
+@-webkit-keyframes laserAnimation {
+    100% {
+        background-position: -680px;
+    }
+}
+
+@-moz-keyframes laserAnimation {
+    100% {
+        background-position: -680px;
+    }
+}
+
+@-ms-keyframes laserAnimation {
+    100% {
+        background-position: -680px;
+    }
+}
+
+@-o-keyframes laserAnimation {
+    100% {
+        background-position: -680px;
+    }
+}
+
+
+/**
+    HURT ALIEN ANIMATION
+**/
+
+.hurt-alien-animation {
+    width: 35px;
+    height: 46px;
+    background-image: url(../images/hurt-alien.png);
+    animation: hurtAnimation .5s steps(22) infinite;
+    -webkit-animation: hurtAnimation .5s steps(22) infinite;
+    -moz-animation: hurtAnimation .5s steps(22) infinite;
+    -ms-animation: hurtAnimation .5s steps(22) infinite;
+    -o-animation: hurtAnimation .5s steps(22) infinite;
+}
+
+@keyframes hurtAnimation {
+    100% {
+        background-position: -770px;
+    }
+}
+
+@-webkit-keyframes hurtAnimation {
+    100% {
+        background-position: -770px;
+    }
+}
+
+@-moz-keyframes hurtAnimation {
+    100% {
+        background-position: -770px;
+    }
+}
+
+@-ms-keyframes hurtAnimation {
+    100% {
+        background-position: -770px;
+    }
+}
+
+@-o-keyframes hurtAnimation {
+    100% {
+        background-position: -770px;
+    }
+}
+
+
+/**
+    WARP ALIEN ANIMATION
+**/
+
+.warp-alien-animation {
+    background-image: url(../images/alien-warp.png);
+    animation: warpAlienAnimation .9s steps(2) infinite;
+    -webkit-animation: warpAlienAnimation .9s steps(2) infinite;
+    -moz-animation: warpAlienAnimation .9s steps(2) infinite;
+    -ms-animation: warpAlienAnimation .9s steps(2) infinite;
+    -o-animation: warpAlienAnimation .9s steps(2) infinite;
+}
+
+@keyframes warpAlienAnimation {
+    100% {
+        background-position: -68px;
+    }
+}
+
+@-webkit-keyframes warpAlienAnimation {
+    100% {
+        background-position: -68px;
+    }
+}
+
+@-moz-keyframes warpAlienAnimation {
+    100% {
+        background-position: -68px;
+    }
+}
+
+@-ms-keyframes warpAlienAnimation {
+    100% {
+        background-position: -68px;
+    }
+}
+
+@-o-keyframes warpAlienAnimation {
+    100% {
+        background-position: -68px;
+    }
+}

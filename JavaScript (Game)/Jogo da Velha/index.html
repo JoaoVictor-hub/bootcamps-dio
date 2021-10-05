@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Jogo da Velha</h1>
+    <div class="player">
+        <label>Vez de:</label>
+        <label id="player-selected"></label>
+    </div>
+    <div>
+        <div id="1" class="square" onclick="choiceSquare(this.id)">-</div>
+        <div id="2" class="square" onclick="choiceSquare(this.id)">-</div>
+        <div id="3" class="square" onclick="choiceSquare(this.id)">-</div>
+    </div>
+
+    <div>
+        <div id="4" class="square" onclick="choiceSquare(this.id)">-</div>
+        <div id="5" class="square" onclick="choiceSquare(this.id)">-</div>
+        <div id="6" class="square" onclick="choiceSquare(this.id)">-</div>
+    </div>
+
+    <div>
+        <div id="7" class="square" onclick="choiceSquare(this.id)">-</div>
+        <div id="8" class="square" onclick="choiceSquare(this.id)">-</div>
+        <div id="9" class="square" onclick="choiceSquare(this.id)">-</div>
+    </div>
+
+    <div class="winner">
+        <label> Vencedor:</label>
+        <label id="winner-selected"></label>
+    </div>
+
+    <div>
+        <button onclick="restart()">Reiniciar</button>
+    </div>
+
+</body>
+
+<script src="core.js"></script>
+
+</html>

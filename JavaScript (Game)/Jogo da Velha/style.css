@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: #37322f;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.square {
+    text-align: center;
+    width: 50px;
+    display: inline-block;
+    padding: 40px;
+    font-weight: bolder;
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+    color: #37322f;
+    border-radius: 7px;
+    background: #37322f;
+    box-shadow: inset 6px 6px 12px #161413, inset -6px -6px 12px #58504b;
+}
+
+.player,
+.winner {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+button {
+    color: #fff;
+    font-weight: bold;
+    width: 400px;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 7px;
+    background: linear-gradient(145deg, #322d2a, #3b3632);
+    box-shadow: 11px 11px 22px #201e1c, -11px -11px 22px #4e4742;
+    cursor: pointer;
+}
